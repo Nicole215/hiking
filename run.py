@@ -6,6 +6,7 @@ def game():
     print("Welcome to a virtual hike.")
     print("We are going to hike 50km today.")
     print("Are you ready to hike?")
+    print("You can quit any time by entering [q].")
     print("But first, what is your name? ")
     name = input()
     capitalized_name = name.capitalize()
@@ -26,6 +27,8 @@ def startingPoint():
     elif option == "n":
         print("Okay, no map for you. Let's start our hike.\n")
         meetFakeFriend()
+    elif option == "q":
+        quit()
     else:
         invalidChoice()
         startingPoint()
@@ -57,6 +60,8 @@ def firstServicePoint():
         print("That wasn't the best choice.")
         print("Now you need to return to start to poop.\n")
         startingPoint()
+    elif option == "q":
+        quit()
     else:
         invalidChoice()
         firstServicePoint()
@@ -81,6 +86,8 @@ def secondServicePoint():
         print("Thank you for hiking with us.")
         print("Next time you'll make it to the finish line.\n")
         game()
+    elif option == "q":
+        quit()
     else:
         invalidChoice()
         secondServicePoint()
@@ -104,6 +111,8 @@ def thirdServicePoint():
         print("Thank you for hiking with us.")
         print("Next time you'll make it to the finish line.\n")
         game()
+    elif option == "q":
+        quit()
     else:
         invalidChoice()
         thirdServicePoint()
