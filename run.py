@@ -8,8 +8,13 @@ def game():
     print("Are you ready to hike?")
     print("You can quit any time by entering [q].")
     print("But first, what is your name? ")
-    name = input()
-    capitalized_name = name.capitalize()
+    while True:
+        name = input()
+        capitalized_name = name.capitalize()
+        if capitalized_name.isalpha():
+            break
+        else:
+            print("Please enter only letters.")
     print(f"Welcome, {capitalized_name}. Let's get ready to hike.\n")
     startingPoint()
 
