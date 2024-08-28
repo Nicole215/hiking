@@ -16,15 +16,15 @@ def game():
         else:
             print("Please enter only letters.")
     print(f"Welcome, {capitalized_name}. Let's get ready to hike.\n")
-    startingPoint()
+    startingPoint(capitalized_name)
 
 
-def startingPoint():
+def startingPoint(name):
     """
     First point where user has to make a right decission
     """
     print("I hope you brought everything you need for a hike.")
-    print("Do you need a map of todays tour? y/n ")
+    print(f"Do you need a map of todays tour, {name}? y/n ")
     option = input()
     if option == "y":
         print("Here is your map. Let's go to the first service point.\n")
@@ -36,7 +36,7 @@ def startingPoint():
         quit()
     else:
         invalidChoice()
-        startingPoint()
+        startingPoint(name)
 
 
 def meetFakeFriend():
