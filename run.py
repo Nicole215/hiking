@@ -22,7 +22,7 @@ def startingPoint():
     print("Do you need a map of todays tour? y/n ")
     option = input()
     if option == "y":
-        print("Great. Here is your map. Let's go to the first service point.\n")
+        print("Here is your map. Let's go to the first service point.\n")
         firstServicePoint()
     elif option == "n":
         print("Okay, no map for you. Let's start our hike.\n")
@@ -51,7 +51,7 @@ def firstServicePoint():
     """
     print("Welcome to the first service point.")
     print("Here we have a free drink for you.")
-    print("What would you like to have? Water or coffee? w/c ")
+    print("What would you like to have? Water, coffee or energy? w/c/e ")
     option = input()
     if option == "w":
         print("Good choice. Keep on hiking.\n")
@@ -60,6 +60,9 @@ def firstServicePoint():
         print("That wasn't the best choice.")
         print("Now you need to return to start to poop.\n")
         startingPoint()
+    elif option == "e":
+        print("Whoah Speedy Gonzales, watch your heartrate!\n")
+        thirdServicePoint()  # Energy let's user jump to third Service Point
     elif option == "q":
         quit()
     else:
@@ -99,7 +102,7 @@ def thirdServicePoint():
     """
     print("Welcome to the third service point. Almost there!")
     print("Let's have a little more to eat.")
-    print("Do you want some more fruit or just some water? f/w ")
+    print("Do you want some fruit or just some water? f/w ")
     option = input()
     if option == "f":
         print("Good choice. Those last kilometers will be hard.")
