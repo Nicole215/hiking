@@ -86,7 +86,41 @@ def secondServicePoint():
         secondServicePoint()
 
 
+def thirdServicePoint():
+    """
+    Fourth point where user has to make a right decission
+    """
+    print("Welcome to the third service point. Almost there!")
+    print("Let's have a little more to eat.")
+    print("Do you want some more fruit or just some water? f/w ")
+    option = input()
+    if option == "f":
+        print("Good choice. Those last kilometers will be hard.")
+        print("But you can do it!\n")
+        finishLine()
+    elif option == "w":
+        print("Oh no! You've come so far, but now you get cramps.")
+        print("A bus will take you back home.")
+        print("Thank you for hiking with us.")
+        print("Next time you'll make it to the finish line.\n")
+        game()
+    else:
+        invalidChoice()
+        thirdServicePoint()
+
+
+def finishLine():
+    """
+    End of game if all decissions by user were right
+    """
+    print("Congratulations! You just hiked 50 kilometers!")
+    print("Here is your finisher beer. Enjoy!")
+    quit()
+
+
 def invalidChoice():
     print("You entered an invalid option. Please try again.")
 
+
+# Calling game function
 game()
