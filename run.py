@@ -32,7 +32,10 @@ def startingPoint(name):
     """
     print("I hope you brought everything you need for a hike.")
     print(f"Do you need a map of todays tour, {name}? y/n ")
-    option = input()
+    try:
+        option = input()
+    except:
+        print("Ups, something went wrong.")
     if option == "y":
         print("Here is your map. Let's go to the first service point.\n")
         firstServicePoint(name)
@@ -64,7 +67,10 @@ def firstServicePoint(name):
     print(f"Welcome {name} to the first service point.")
     print("Here we have a free drink for you.")
     print("What would you like to have? Water, coffee or energy? w/c/e ")
-    option = input()
+    try:
+        option = input()
+    except:
+        print("Ups, something went wrong.")
     if option == "w":
         print("Good choice. Keep on hiking.\n")
         secondServicePoint(name)
@@ -91,7 +97,10 @@ def secondServicePoint(name):
     print("We have some bananas and waffles for you. Enjoy.")
     print("Unfortunately it's starting to rain.")
     print("What are you going to do? Wait or hike on? w/h ")
-    option = input()
+    try:
+        option = input()
+    except:
+        print("Ups, something went wrong.")
     if option == "h":
         print("You are a true hiker. Rain is not gonna hold us back.")
         print("Behind the next corner, sunshine awaits us.\n")
@@ -115,7 +124,10 @@ def thirdServicePoint(name):
     print("Welcome to the third service point. Almost there!")
     print("Let's have a little more to eat.")
     print("Do you want some fruit or just some water? f/w ")
-    option = input()
+    try:
+        option = input()
+    except:
+        print("Ups, something went wrong.")
     if option == "f":
         print("Good choice. Those last kilometers will be hard.")
         print("But you can do it!\n")
