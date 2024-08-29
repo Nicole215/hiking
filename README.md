@@ -22,12 +22,29 @@ I used [app.diagrams.net](https://app.diagrams.net/) to create a flowchart.
 ![Screenshot 2024-08-29 131538](https://github.com/user-attachments/assets/a130b85d-a771-4bae-a0a7-597e5c7e2261)
 
 - A cheerful yellow let's the hiker know he made it to the end.
+
+![Screenshot 2024-08-29 212319](https://github.com/user-attachments/assets/b2ccd434-fb04-4f91-899e-814f84fcbc3e)
+
 ## Features
 - All inputs have error messages that let the player know when their input was incorrect.
 - Player can quit anytime, but like in real life hikes quitting leaves the hiker in the middle of nowhere by himself.
-- User name is used throughout the game to make him feel like a member of a great community.
+- User name is used throughout the game to make the user feel like a member of a great community.
 ### Future Features
 The code was written in an easy to read and also easy to expand way. It is possible to extend the hike and add more service points.
 
 ![Screenshot 2024-08-29 120359](https://github.com/user-attachments/assets/aaa47e75-72b9-462e-8b20-56ed5017540a)
 
+## Testing
+The code was tested using the PEP8 [link](https://pep8ci.herokuapp.com/) provided by Code Institute. Some lines were to long and I rewrote the code until the test came back all clear.
+
+![Screenshot 2024-08-29 133955](https://github.com/user-attachments/assets/2daa9938-d082-43a4-84ba-6f1956640657)
+
+The site was also tested using Lighthouse:
+
+![Screenshot 2024-08-29 195800](https://github.com/user-attachments/assets/6446e3e9-09e7-469c-9100-a7b693279983)
+
+### Manual Testing
+- During coding I continually tested each function whether it was working correct and leading to the expected next funtion.
+- While testing I entered the correct and the bad choices.
+- I also tested several invalid inputs to see if it always gives the correct error message.
+- After deploying I did the same testing in the Code Institute's Heroku Termial.
