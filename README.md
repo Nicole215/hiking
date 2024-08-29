@@ -58,3 +58,20 @@ During development the code was constantly tested. At time of deployment there w
 - [Heroku](https://dashboard.heroku.com/apps) to deploy the game
 - [app.diagrams.net](https://app.diagrams.net/) to create the flowchart
 
+## Deployment
+This project was deployed using Code Institute's mock terminal for Heroku
+- Log into Heroku or create an account
+- Click "Create new app"
+- Click "Settings" and scroll down to Config Vars
+- In the KEY input field, enter "PORT"
+- In the VALUE input field next to it, enter "8000"
+- Confirm by clicking "Add"
+- Still in "Settings" scroll down to Buildpacks
+- Select Python and save changes
+- Still in Buildpacks, select Nodejs and save
+- Make sure, the Python buildpack is above the Nodejs buildpack
+- Click "Deploy" in the top navbar
+- Select "GitHub" and click "Connect to GitHub"
+- Choose the GitHub repository you want to deploy and confirm by clicking "connect"
+- Scroll down and click on "Deploy Branch"
+- Once the app is deployed, a button to view the app will be provided
