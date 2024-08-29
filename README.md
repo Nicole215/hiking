@@ -1,11 +1,11 @@
 # Hiking - Game
-Hiking is a text based adventure game, where the player goes on a virtual organized hike. At service points the hiker can get a map, drinks and snacks. But if the hiker makes a bad choice, the hike is over.
+Hiking is a text based adventure game, where the player goes on a virtual organized hike. At service points the hiker can get a map, drinks and snacks. But when the hiker makes a bad choice, the hike is over.
 ![Screenshot 2024-08-29 200135](https://github.com/user-attachments/assets/9aca3b8a-22a0-401a-b464-5c154329dd9f)
 You can go on your hike [here](https://hiking-b532d6d90183.herokuapp.com/)
 ## User Experience
 - As a player
   - I want to play an easy game
-  - I always want to see what to type to make a choice
+  - I always want to see what to input to make a choice
   - I want to get feedback by the game
 ## Design
 ### Flowchart
@@ -17,7 +17,7 @@ I used [app.diagrams.net](https://app.diagrams.net/) to create a flowchart.
 
 ![Screenshot 2024-08-29 131516](https://github.com/user-attachments/assets/532bc3c8-5527-4cd6-8f73-be93e6a341af)
 
-- When the hike ends because of a wrong choice, the feedback is given in red.
+- When the hike ends because of a wrong choice, feedback is given in red.
   
 ![Screenshot 2024-08-29 131538](https://github.com/user-attachments/assets/a130b85d-a771-4bae-a0a7-597e5c7e2261)
 
@@ -27,7 +27,7 @@ I used [app.diagrams.net](https://app.diagrams.net/) to create a flowchart.
 
 ## Features
 - All inputs have error messages that let the player know when their input was incorrect.
-- Player can quit anytime, but like in real life hikes quitting leaves the hiker in the middle of nowhere by himself.
+- Player can quit anytime, but like in real life hikes, quitting leaves the hiker in the middle of nowhere by himself.
 - User name is used throughout the game to make the user feel like a member of a great community.
 ### Future Features
 The code was written in an easy to read and also easy to expand way. It is possible to extend the hike and add more service points.
@@ -45,7 +45,7 @@ The site was also tested using Lighthouse:
 
 ### Manual Testing
 - During coding I continually tested each function whether it was working correct and leading to the expected next function.
-- While testing I entered the correct and the bad choices.
+- While testing I entered the correct and the wrong choices.
 - I also tested several invalid inputs to see if it always gives the correct error message.
 - After deploying I did the same testing in the Code Institute's Heroku Termial.
 ### Bugs
@@ -78,5 +78,5 @@ This project was deployed using Code Institute's mock terminal for Heroku
 ## Credits
 - The game is based on real life experiences that i have gained as a participant in various hiking events.
 - For the basic game code I have used this [tutorial](https://www.youtube.com/watch?v=pEfBKamHJew).
-- To use the user name throughout the game, my mentor Rory Patrick Sheridan advised me to pass on the name as an argument and avoid using a global variable.
+- To use the user name throughout the game, my mentor Rory Patrick Sheridan advised me to pass the name as an argument and avoid using a global variable.
 - To install Colorama, I used this [tutorial](https://www.youtube.com/watch?v=u51Zjlnui4Y)
