@@ -39,7 +39,7 @@ def startingPoint(name):
     print(Fore.GREEN + f"Do you need a map of todays tour, {name}? y/n ")
     try:
         option = input()
-    except:
+    except Error:
         print("Ups, something went wrong.")
     if option == "y":
         print("Here is your map. Let's go to the first service point.\n")
@@ -71,10 +71,11 @@ def firstServicePoint(name):
     """
     print(f"Welcome {name} to the first service point.")
     print("Here we have a free drink for you.")
-    print(Fore.GREEN + "What would you like to have? Water, coffee or energy? w/c/e ")
+    print(Fore.GREEN + "What would you like to have?")
+    print(Fore.GREEN + "Water, coffee or energy? w/c/e ")
     try:
         option = input()
-    except:
+    except Error:
         print("Ups, something went wrong.")
     if option == "w":
         print("Good choice. Keep on hiking.\n")
@@ -85,7 +86,7 @@ def firstServicePoint(name):
         startingPoint(name)
     elif option == "e":
         print(Fore.BLUE + "Whoah Speedy Gonzales, watch your heartrate!\n")
-        thirdServicePoint(name)  # Energy let's user jump to third Service Point
+        thirdServicePoint(name)  # Energy let's user jump to third Point
     elif option == "q":
         quit()
     else:
@@ -104,7 +105,7 @@ def secondServicePoint(name):
     print(Fore.GREEN + "What are you going to do? Wait or hike on? w/h ")
     try:
         option = input()
-    except:
+    except Error:
         print("Ups, something went wrong.")
     if option == "h":
         print("You are a true hiker. Rain is not gonna hold us back.")
@@ -131,7 +132,7 @@ def thirdServicePoint(name):
     print(Fore.GREEN + "Do you want some fruit or just some water? f/w ")
     try:
         option = input()
-    except:
+    except Error:
         print("Ups, something went wrong.")
     if option == "f":
         print("Good choice. Those last kilometers will be hard.")
