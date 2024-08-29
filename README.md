@@ -14,8 +14,20 @@ I used [app.diagrams.net](https://app.diagrams.net/) to create a flowchart.
 ### Color scheme
 - To make it easier to read, I used different colors in the game.
 - Questions are green.
+
 ![Screenshot 2024-08-29 131516](https://github.com/user-attachments/assets/532bc3c8-5527-4cd6-8f73-be93e6a341af)
 
 - When the hike ends because of a wrong choice, the feedback is given in red.
+  
 ![Screenshot 2024-08-29 131538](https://github.com/user-attachments/assets/a130b85d-a771-4bae-a0a7-597e5c7e2261)
+
 - A cheerful yellow let's the hiker know he made it to the end.
+## Features
+- All inputs have error messages that let the player know when their input was incorrect.
+- Player can quit anytime, but like in real life hikes quitting leaves the hiker in the middle of nowhere by himself.
+- User name is used throughout the game to make him feel like a member of a great community.
+### Future Features
+The code was written in an easy to read and also easy to expand way. It is possible to extend the hike and add more service points.
+
+![Screenshot 2024-08-29 120359](https://github.com/user-attachments/assets/aaa47e75-72b9-462e-8b20-56ed5017540a)
+
