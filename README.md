@@ -48,3 +48,13 @@ The site was also tested using Lighthouse:
 - While testing I entered the correct and the bad choices.
 - I also tested several invalid inputs to see if it always gives the correct error message.
 - After deploying I did the same testing in the Code Institute's Heroku Termial.
+### Bugs
+During development the code was constantly tested. At time of deployment there were no bugs that I know of.
+## Technologies  used
+#### Language
+- Python
+#### Others
+- [Colorama](https://pypi.org/project/colorama/) to add some color
+- [Heroku](https://dashboard.heroku.com/apps) to deploy the game
+- [app.diagrams.net](https://app.diagrams.net/) to create the flowchart
+
