@@ -1,3 +1,8 @@
+import colorama
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
+
+
 def clear():
     """
     Clear function to clean-up the terminal so things don't get messy.
@@ -14,7 +19,7 @@ def game():
     print("We are going to hike 50km today.")
     print("Are you ready to hike?")
     print("You can quit any time by entering [q].")
-    print("But first, what is your name? ")
+    print(Fore.GREEN + "But first, what is your name? ")
     while True:
         name = input()
         capitalized_name = name.capitalize()
@@ -31,7 +36,7 @@ def startingPoint(name):
     First point where user has to make a right decission
     """
     print("I hope you brought everything you need for a hike.")
-    print(f"Do you need a map of todays tour, {name}? y/n ")
+    print(Fore.GREEN + f"Do you need a map of todays tour, {name}? y/n ")
     try:
         option = input()
     except:
@@ -56,7 +61,7 @@ def meetFakeFriend():
     print("Great, just 5km in you already made a new friend.")
     print("Unfortunatly your new friend is not part of our group.")
     print("Without a map you can't get back to the right path.")
-    print("You are not taking part in our event anymore. Sorry.\n")
+    print(Fore.RED + "You are not taking part in our event anymore. Sorry.\n")
     game()
 
 
@@ -66,7 +71,7 @@ def firstServicePoint(name):
     """
     print(f"Welcome {name} to the first service point.")
     print("Here we have a free drink for you.")
-    print("What would you like to have? Water, coffee or energy? w/c/e ")
+    print(Fore.GREEN + "What would you like to have? Water, coffee or energy? w/c/e ")
     try:
         option = input()
     except:
@@ -75,11 +80,11 @@ def firstServicePoint(name):
         print("Good choice. Keep on hiking.\n")
         secondServicePoint(name)
     elif option == "c":
-        print("That wasn't the best choice.")
+        print(Fore.RED + "That wasn't the best choice.")
         print("Now you need to return to start to poop.\n")
         startingPoint(name)
     elif option == "e":
-        print("Whoah Speedy Gonzales, watch your heartrate!\n")
+        print(Fore.BLUE + "Whoah Speedy Gonzales, watch your heartrate!\n")
         thirdServicePoint(name)  # Energy let's user jump to third Service Point
     elif option == "q":
         quit()
@@ -96,7 +101,7 @@ def secondServicePoint(name):
     print("We're halfway through. Congratulations so far.")
     print("We have some bananas and waffles for you. Enjoy.")
     print("Unfortunately it's starting to rain.")
-    print("What are you going to do? Wait or hike on? w/h ")
+    print(Fore.GREEN + "What are you going to do? Wait or hike on? w/h ")
     try:
         option = input()
     except:
@@ -108,7 +113,7 @@ def secondServicePoint(name):
     elif option == "w":
         print("The rain lasts for hours. You give up. A bus takes you home.")
         print("Thank you for hiking with us.")
-        print("Next time you'll make it to the finish line.\n")
+        print(Fore.RED + "Next time you'll make it to the finish line.\n")
         game()
     elif option == "q":
         quit()
@@ -123,7 +128,7 @@ def thirdServicePoint(name):
     """
     print("Welcome to the third service point. Almost there!")
     print("Let's have a little more to eat.")
-    print("Do you want some fruit or just some water? f/w ")
+    print(Fore.GREEN + "Do you want some fruit or just some water? f/w ")
     try:
         option = input()
     except:
@@ -134,7 +139,7 @@ def thirdServicePoint(name):
         finishLine(name)
     elif option == "w":
         print("Oh no! You've come so far, but now you get cramps.")
-        print("A bus will take you back home.")
+        print(Fore.RED + "A bus will take you back home.")
         print(f"Thank you for hiking with us, {name}.")
         print("Next time you'll make it to the finish line.\n")
         game()
@@ -149,7 +154,7 @@ def finishLine(name):
     """
     End of game if all decissions by user were right
     """
-    print("Congratulations! You just hiked 50 kilometers!")
+    print(Fore.YELLOW + "Congratulations! You just hiked 50 kilometers!")
     print(f"Here is your finisher beer, {name}. Enjoy!")
     quit()
 
