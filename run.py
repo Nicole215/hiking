@@ -1,3 +1,10 @@
+def clear():
+    """
+    Clear function to clean-up the terminal so things don't get messy.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
+
+
 def game():
     """
     Welcome message and start of game.
@@ -28,7 +35,7 @@ def startingPoint(name):
     option = input()
     if option == "y":
         print("Here is your map. Let's go to the first service point.\n")
-        firstServicePoint()
+        firstServicePoint(name)
     elif option == "n":
         print("Okay, no map for you. Let's start our hike.\n")
         meetFakeFriend()
@@ -50,36 +57,36 @@ def meetFakeFriend():
     game()
 
 
-def firstServicePoint():
+def firstServicePoint(name):
     """
     Second point where user has to make a right decission
     """
-    print("Welcome to the first service point.")
+    print(f"Welcome {name} to the first service point.")
     print("Here we have a free drink for you.")
     print("What would you like to have? Water, coffee or energy? w/c/e ")
     option = input()
     if option == "w":
         print("Good choice. Keep on hiking.\n")
-        secondServicePoint()
+        secondServicePoint(name)
     elif option == "c":
         print("That wasn't the best choice.")
         print("Now you need to return to start to poop.\n")
-        startingPoint()
+        startingPoint(name)
     elif option == "e":
         print("Whoah Speedy Gonzales, watch your heartrate!\n")
-        thirdServicePoint()  # Energy let's user jump to third Service Point
+        thirdServicePoint(name)  # Energy let's user jump to third Service Point
     elif option == "q":
         quit()
     else:
         invalidChoice()
-        firstServicePoint()
+        firstServicePoint(name)
 
 
-def secondServicePoint():
+def secondServicePoint(name):
     """
     Third point where user has to make a right decission
     """
-    print("Welcome to the second service point.")
+    print(f"Welcome to the second service point, {name}.")
     print("We're halfway through. Congratulations so far.")
     print("We have some bananas and waffles for you. Enjoy.")
     print("Unfortunately it's starting to rain.")
@@ -88,7 +95,7 @@ def secondServicePoint():
     if option == "h":
         print("You are a true hiker. Rain is not gonna hold us back.")
         print("Behind the next corner, sunshine awaits us.\n")
-        thirdServicePoint()
+        thirdServicePoint(name)
     elif option == "w":
         print("The rain lasts for hours. You give up. A bus takes you home.")
         print("Thank you for hiking with us.")
@@ -98,10 +105,10 @@ def secondServicePoint():
         quit()
     else:
         invalidChoice()
-        secondServicePoint()
+        secondServicePoint(name)
 
 
-def thirdServicePoint():
+def thirdServicePoint(name):
     """
     Fourth point where user has to make a right decission
     """
@@ -112,26 +119,26 @@ def thirdServicePoint():
     if option == "f":
         print("Good choice. Those last kilometers will be hard.")
         print("But you can do it!\n")
-        finishLine()
+        finishLine(name)
     elif option == "w":
         print("Oh no! You've come so far, but now you get cramps.")
         print("A bus will take you back home.")
-        print("Thank you for hiking with us.")
+        print(f"Thank you for hiking with us, {name}.")
         print("Next time you'll make it to the finish line.\n")
         game()
     elif option == "q":
         quit()
     else:
         invalidChoice()
-        thirdServicePoint()
+        thirdServicePoint(name)
 
 
-def finishLine():
+def finishLine(name):
     """
     End of game if all decissions by user were right
     """
     print("Congratulations! You just hiked 50 kilometers!")
-    print("Here is your finisher beer. Enjoy!")
+    print(f"Here is your finisher beer, {name}. Enjoy!")
     quit()
 
 
