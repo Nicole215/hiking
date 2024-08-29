@@ -44,7 +44,7 @@ The site was also tested using Lighthouse:
 ![Screenshot 2024-08-29 195800](https://github.com/user-attachments/assets/6446e3e9-09e7-469c-9100-a7b693279983)
 
 ### Manual Testing
-- During coding I continually tested each function whether it was working correct and leading to the expected next funtion.
+- During coding I continually tested each function whether it was working correct and leading to the expected next function.
 - While testing I entered the correct and the bad choices.
 - I also tested several invalid inputs to see if it always gives the correct error message.
 - After deploying I did the same testing in the Code Institute's Heroku Termial.
@@ -75,3 +75,8 @@ This project was deployed using Code Institute's mock terminal for Heroku
 - Choose the GitHub repository you want to deploy and confirm by clicking "connect"
 - Scroll down and click on "Deploy Branch"
 - Once the app is deployed, a button to view the app will be provided
+## Credits
+- The game is based on real life experiences that i have gained as a participant in various hiking events.
+- For the basic game code I have used this [tutorial](https://www.youtube.com/watch?v=pEfBKamHJew).
+- To use the user name throughout the game, my mentor Rory Patrick Sheridan advised me to pass on the name as an argument and avoid using a global variable.
+- To install Colorama, I used this [tutorial](https://www.youtube.com/watch?v=u51Zjlnui4Y)
