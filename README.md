@@ -77,6 +77,6 @@ This project was deployed using Code Institute's mock terminal for Heroku
 - Once the app is deployed, a button to view the app will be provided
 ## Credits
 - The game is based on real life experiences that i have gained as a participant in various hiking events.
-- For the basic game code I have used this [tutorial](https://www.youtube.com/watch?v=pEfBKamHJew).
+- To avoid endless if-elif nesting I googled for alternatives and found this [tutorial](https://www.youtube.com/watch?v=pEfBKamHJew).
 - To use the user name throughout the game, my mentor Rory Patrick Sheridan advised me to pass the name as an argument and avoid using a global variable.
 - To install Colorama, I used this [tutorial](https://www.youtube.com/watch?v=u51Zjlnui4Y)
